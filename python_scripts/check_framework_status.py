@@ -66,6 +66,7 @@ def main():
 
 		# If the process is not running then send an alert
 		if not target_process_is_running:
+			print("Process is not running. Sending an email.")
 			send_email_alert(processes_to_find[key]["email_message"])
 
 
