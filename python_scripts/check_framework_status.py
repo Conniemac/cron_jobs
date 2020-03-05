@@ -58,9 +58,7 @@ def main():
 	target_process_is_running = False
 	for process in running_processes:
 
-		process_name = process.split(" ")[10]
-		print(process_name)
-		if process_name == target_process_name:
+		if process.find(target_process_name) > -1:
 			target_process_is_running = True
 			break
 
